@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 
 const Post = () => {
-  const [postTitle, setPostTitle] = useState('')
+  const [postTitle, setPostTitle] = useState<string | null>('')
   const changeTitle = () => {
-    setPostTitle(34)
+    setPostTitle(null)
   }
   return <div>{postTitle}</div>
 }
